@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/libs/selectize.default.css">
+    <link rel="stylesheet" href="css/libs/tooltipster.bundle.min.css" >
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="center">Alura Typer</h1>
+
+    <p class="frase center">a ana julia eh lindona</p>
+
+    <div class="center">
+        <img id="spinner" src="img/spinner.gif" alt="carregando">
+        <p id="erro">
+            Ocorreu um erro, tente novamente 
+        </p>
+    </div>
+
+         <ul class="informacoes center">
+             <li>
+                <i class="small material-icons icones">description</i>
+                 <span id="tamanho-frase">10</span> palavras
+            </li>
+             <li>
+                <i class="small material-icons icones">query_builder</i>
+                 <span id="tempo">3</span> segundos
+            </li>
+         </ul>
+
+         <textarea class="campo-digitacao" rows="8" cols="40"></textarea>
+
+         <div class="botoes">
+            <a id="reiniciar" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">restore</i>
+            </a>
+            <a id="placar" class="btn-floating btn-large waves-effect waves-light green">
+                <i class="material-icons">assignment</i>
+            </a>
+            <a id="troca-frase" class="btn-floating btn-large waves-effect waves-light blue">
+                <i class="material-icons">shuffle</i>
+            </a>
+            <a id="botao-frase-id" class="btn-floating btn-large waves-effect waves-light cyan">
+                <i class="material-icons">repeat_one</i>
+            </a>
+
+            <input type="number" id="frase-id" min="0">
+
+            <div class="select-usuarios">
+                <select id="usuarios">
+                    <option value="Ana">Ana</option>
+                    <option value="Marilia">Marilia</option>
+                    <option value="Gabriela">Gabriela</option>
+                </select>
+            </div>
+
+            <a id="botao-sinc" class="tooltip btn-floating btn-large waves-effect waves-light yellow" 
+            title="Sincronizado com sucesso!">
+                <i class="material-icons">swap_vert</i>
+            </a>
+        </div>
+   
+
+         <ul class="center">
+             <li><span class="contador-caracteres">0</span> caracteres</li>
+             <li><span class="contador-palavras">0</span> palavras </li>
+         </ul>
+
+         <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <th>Nome</th>
+                    <th>Número de palavras</th>
+                    <th>Remover</th> 
+    
+                </thead>
+                <tbody>
+                  
+                </tbody>
+            </table>
+    
+        </section>
+
+    </div>
+    
+         <script src="js/jquery.js"></script>
+         <script src="js/main.js"></script>
+         <script src="js/placar.js"></script>
+         <script src="js/frase.js"></script>
+         <script src="js/selectize.js"></script>
+         <script src="js/tooltipster.bundle.min.js"></script>
+
+         
+
+</body>
+</html>
